@@ -1,34 +1,84 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Mi experimento CSS + Git</title>
-    <style>
-      h1 {
-        color: white;
-        background-color: green;
-        border: 1px solid black;
-      }
 
-      p {
-        color: aliceblue;
-        background-color: rgb(150, 44, 248);
-        border: 3px black solid;
-        font-size: 64px;
-      }
-      main{
-        background-color: purple;
-      }
-    </style>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Mi experimento CSS + Git</title>
+  <style>
+    h1 {
+      color: white;
+      background-color: green;
+      border: 1px solid black;
+    }
+
+    p {
+      color: aliceblue;
+      background-color: rgb(150, 44, 248);
+      border: 3px black solid;
+      font-size: 64px;
+    }
+
+    main {
+      background-color: purple;
+    }
+
+
+    #ascii-mascot {
+      position: fixed;
+      left: 0;
+      top: 0;
+      transform: translate(0, 0);
+      font-family: "Courier New", monospace;
+      font-size: 44px;
+      line-height: 1.1;
+      white-space: pre;
+      color: rgb(0, 0, 0);
+      padding: 8px 10px;
+      pointer-events: none;
+      z-index: 9999;
+      transition: transform 0.15s ease-out;
+      
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="ascii-mascot" aria-hidden="true">
+    <pre>
+  [^_^]
+  </pre>
+  </div>
+
+
+  <h1>ARCHIVO EDITADO CON EXITO</h1>
+
+  <footer>
+    <p>Rodrigo Blanco - Práctica examen publicar en GitHub Pages - FOOTER</p>
+  </footer>
+</body>
+
+
+<script>
+  
+  const asciiMascot = document.getElementById('ascii-mascot');
+
+ 
+
+
+  window.addEventListener('mousemove', (event) => {
     
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
 
-    <h1>ARCHIVO EDITADO CON EXITO</h1>
+    
+    const targetX = mouseX ;
+    const targetY = mouseY ;
 
-    <footer>
-      <p>Rodrigo Blanco - Práctica examen publicar en GitHub Pages - FOOTER</p>
-    </footer>
-  </body>
+    asciiMascot.style.transform = `translate(${targetX}px, ${targetY}px)`;
+  });
+</script>
+
+
 </html>
