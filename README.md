@@ -81,6 +81,16 @@ El día del examen práctico te propondré una serie de mejoras y cambios en ese
   ```
 - Haz commit y push de ese archivo, si lo creaste.
 
+
+### 8. Agrega 🤖 una simpática mascota que siga los movimientos del ratón del visitante al sitio web ... :
+ 
+- Creala tu mismo/a  y/o bebe de ostras fuentes de inspiración :
+
+ASCII Mascot Collection , en fp-bits
+Linda mascota interactiva para tu  blog  ~  concepto original de Joost van der Schee
+
+Aviso para navegantes ⛵ No olvides hacer el 'merge' ... ;-) incorporando todos los cambios en la rama principal ('main' ) !
+
 ### Recursos adicionales en español
 - [Paso a Paso para activar tu proyecto en GitHub Pages- Alura Latam](https://www.aluracursos.com/blog/github-pages)
 - [Guía oficial de GitHub Pages (español)](https://docs.github.com/es/pages)
